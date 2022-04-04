@@ -1,7 +1,9 @@
+<?php
 
-<?php require '../app/Manager/QcmManager.php';
-$qcmManager=new QcmManager();
+require '../app/Manager/QcmManager.php';
+
+$qcmManager = new QcmManager();
 $qcms = $qcmManager->getAll();
-require '../template/index.tpl.php' ;
+require '../template/index.tpl.php';
 ?>
-    
+

@@ -1,55 +1,15 @@
 <?php
 
-class QCM
-{
+require_once '../app/Entity/Entity.php';
 
+class QCM extends Entity
+{
     private string $title;
-    private int $id;
+    private $QCM_id;
+
 
     /** @var Question[] */
     private array $questions;
-
-
-    
-    /**
-     * Get the value of title
-     */ 
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Set the value of title
-     *
-     * @return  self
-     */ 
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
 
     /**
      * @param Question $question
@@ -97,5 +57,55 @@ class QCM
     }
 
 
+    /**
+     * Get the value of title
+     */ 
+    public function getTitle()
+    {
+        return $this->title;
+    }
 
+    /**
+     * Set the value of title
+     *
+     * @return  self
+     */ 
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getQCMId()
+    {
+        return $this->QCM_id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->QCM_id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Set the value of QCM_id
+     *
+     * @return  self
+     */ 
+    public function setQCMId($QCM_id)
+    {
+        $this->QCM_id = $QCM_id;
+
+        return $this;
+    }
 }

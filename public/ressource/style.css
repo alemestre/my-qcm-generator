@@ -1,0 +1,32 @@
+.btn-outline-info:hover >a{
+    color:#fff
+}
+
+.btn-outline-info> a{
+    color:#0dcaf0;
+    text-decoration: none;
+}
+
+.btn-info> a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+.btn-sm:hover >a{
+    color:#fff
+}
+
+.btn-sm> a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.btn-primary>a{
+    color:#fff;
+    text-decoration: none;
+}
+.btn{
+    margin : 5px 5px
+}

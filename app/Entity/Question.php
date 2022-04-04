@@ -1,16 +1,22 @@
 <?php
 
-class Question
+require_once '../app/Entity/Entity.php';
+
+class Question extends Entity
 {
 
     // TODO : ajouter les propriétés
+    private int $question_id;
+    
     private string $title;
 
     private array $answers;
 
-    public function __construct(string $title)
+    private int $QCM_id;
+
+    public function __construct()
     {
-        $this->setTitle($title);
+    
     }
 
     /**
@@ -46,5 +52,45 @@ class Question
     public function getAnswers()
     {
         return $this->answers;
+    }
+
+    /**
+     * Get the value of QCM_id
+     */ 
+    public function getQCMId()
+    {
+        return $this->QCM_id;
+    }
+
+    /**
+     * Set the value of QCM_id
+     *
+     * @return  self
+     */ 
+    public function setQCMId($QCM_id)
+    {
+        $this->QCM_id = $QCM_id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getQuestionId()
+    {
+        return $this->question_id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setQuestionId($id)
+    {
+        $this->question_id = $id;
+
+        return $this;
     }
 }
